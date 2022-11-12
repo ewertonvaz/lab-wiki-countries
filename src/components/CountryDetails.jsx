@@ -11,7 +11,7 @@ function CountryDetails({allCountries}) {
     return (
         <div className="col-7">
             <img 
-                src={`https://flagpedia.net/data/flags/icon/72x54/${country.alpha2Code.toLowerCase()}.png`} 
+                src={`https://flagpedia.net/data/flags/icon/256x192/${country.alpha2Code.toLowerCase()}.png`} 
                 alt="" 
                 width="180px"
             />

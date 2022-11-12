@@ -7,7 +7,7 @@ import { Routes, Route} from 'react-router-dom';
 import CountryDetails from './components/CountryDetails';
 
 function App() {
-  const [allCountries, setCountry] = useState( countries );
+  const [ allCountries ] = useState( countries.sort( (a, b) => a.name.common.localeCompare(b.name.common)) );
   return (
     <div className="App">
       <NavBar />
